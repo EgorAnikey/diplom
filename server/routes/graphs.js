@@ -241,19 +241,19 @@ router.get('/gochart', async (req, res) => {
   }
 })
 
-// router.post('/', async (req, res) => {
-//   try {
-//     const graph = new Graph(req.body)
+router.post('/', async (req, res) => {
+  try {
+    const graph = new Graph(req.body)
 
-//     await graph.save();
+    await graph.save();
 
-//     res.json({
-//       msg: 'Success',
-//       graph
-//     })
-//   } catch (e) {
-//     console.error(e)
-//   }
-// })
+    res.json({
+      msg: 'Success',
+      graph
+    })
+  } catch (e) {
+    console.error(e)
+  }
+})
 
 module.exports = router
