@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src='https://cdn.jsdelivr.net/npm/ngraph.generators@19.2.0/dist/ngraph.generators.min.js'></script>
+  <script>
+    // const a = generators.balancedBinTree
+    // const b = a(1000)
+    // console.log(b)
+    // console.log(b.forEachNode(a => console.log(a)))
+    // console.log(b.forEachLink(a => console.log(a)))
+
+
+//     function generate(vertexCount=10) {
+//     var vertices = [];
+//     for(let i = 1; i <= oneToTen(vertexCount); i++) {
+//         vertices.push(i);
+//     }
+
+//     var edges = [];
+//     for(let i = 1; i <= vertices.length; i++) {
+//         var rand = (Math.round(Math.random() * 100) % vertices.length) + 1;
+//         if (edges.findIndex(j => j[0] === i && j[1] === rand) < 0) {
+//             edges.push([i, rand]);
+//         }
+//     }
+
+//     return {
+//         vertices: vertices.map(i => ({id: getChar(i)})),
+//         edges: edges.map(i => ({
+//           sid: getChar(i[0]),
+//           tid: getChar(i[1])
+//         }))
+//     };
+// }
+
+// function getChar(i) {
+//     return String.fromCharCode(96 + i);
+// }
+
+// function oneToTen(vertexCount) {
+//     return Math.round(Math.random() * vertexCount) + 1;
+// }
+
+// console.log(generate(10));
+  </script>
+</html>
